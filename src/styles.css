@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&display=swap');
+
+/* Colors: #171A21 #DD6E42 #7A93AC*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    color: #171A21;
+}
+
+a {
+    text-decoration: none;
+    color: #171A21;
+    transition: .4s;
+}
+
+a:hover {
+    color: #DD6E42;
+}
+
+/* FORM */
+
+form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: .9em;
+    margin-bottom: .4em;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: .6em;
+    color: #171A21;
+    font-size: .8em;
+}
+
+input[type="submit"] {
+    background-color: #efefef;
+    border: 2px solid transparent;
+    border-radius: .4em;
+    padding: .3em 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: .4s;
+}
+
+input[type="submit"]:hover {
+    color: #DD6E42;
+    border-color: #DD6E42;
+    background-color: transparent;
+}
+
+.validation-error p {
+    color: #DC3545;
+    margin-top: .4em;
+    border-left: 3px solid #DC3545;
+    padding-left: .2em
+}
+
+.edit-btn, .remove-btn {
+    border: 1px solid #DD6E42;
+    padding: .4em 1em;
+    font-size: 1em;
+    margin: 0 .5em;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: .4em;
+}
+
+button fa-icon, a fa-icon {
+    margin-right: 0.2em;
+}
+
+.edit-btn, .edit-btn path {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.edit-btn:hover, .edit-btn:hover path {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.remove-btn, .remove-btn path {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.remove-btn:hover, .remove-btn:hover path {
+    color: #fff;
+    background-color: #dc3545;
+}
